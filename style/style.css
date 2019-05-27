@@ -1,0 +1,76 @@
+body {
+  background-image: url("../img/hexellence.png");
+  font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color: #111;
+}
+.icon {
+  flex: 0 0 23px;
+  width: 23px;
+}
+.copyright {
+  font-size: 12px;
+}
+
+header {
+  display: flex;
+  background-color: #262626;
+  padding: 10px;
+  text-align: center;
+}
+.naglowek {
+  flex: 50%;
+  font-weight: bold;
+  color: white;
+}
+span[class=naglowek] {
+  font-size: 20px;
+}
+.container {
+  margin-right: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 400px;
+  background-color: #3F3F3F;
+  overflow: auto;
+  overflow-y:hidden;
+}
+
+
+a {
+  text-decoration: none;
+  color: #BFBFBF;
+  font-weight: bold;
+}
+
+.nav {
+  color: #8C8C8C;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  padding: 5px;
+}
+.search {
+  flex: 0 0 100px;
+  background-color: #3F3F3F;
+  color: white;
+  border: 2px solid #8C8C8C;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+
+.main {
+  margin-left: 390px;
+  min-height: 100%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
