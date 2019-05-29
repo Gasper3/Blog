@@ -1,5 +1,5 @@
 body {
-  background-image: url("../img/hexellence.png");
+  background-image: url("../img/hexa.png");
   font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	color: #111;
@@ -38,16 +38,25 @@ span[class=naglowek] {
   overflow-y:hidden;
 }
 
+nav {
 
+
+  margin-top: 20px;
+}
 a {
   text-decoration: none;
   color: #BFBFBF;
   font-weight: bold;
 }
-
 .nav {
   color: #8C8C8C;
   text-align: center;
+}
+ul {
+  font-size: 18px;
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
 }
 
 form {
@@ -73,4 +82,9 @@ form {
   height: auto;
   padding: 10px;
   text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }

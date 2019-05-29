@@ -17,18 +17,30 @@
       </form>
     </section>
 
+    <nav>
+      <ul>
+        <li class='nav'>NAVIGATION</li>
+        <li><a href='login.php'>Sign in</a></li>
+        <li><a href='newsletter.php'>Newsletter</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      <h5>Made by Gasper3</h5>
+    </footer>
+
   </div>
 
   <div class="main">
     <?php
       if(isset($_POST['button'])) {
-        
+
       }
 
     ?>
 
 
-    <h7 class="copyright">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></h7>
+
   </div>
 
 </body>
