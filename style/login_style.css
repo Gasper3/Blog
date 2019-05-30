@@ -1,0 +1,45 @@
+body {
+  background-image: url("../img/hexa.png");
+}
+
+.container {
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: #3F3F3F;
+  border-radius: 20px;
+  padding: 10px;
+}
+.header {
+  color: #BFBFBF;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  font-size: 60px;
+}
+form {
+  text-align: center;
+}
+.info {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #8C8C8C;
+}
+.field {
+  font-family: 'Roboto', sans-serif;
+  background-color: #3F3F3F;
+  color: white;
+  font-size: 20px;
+  border: 2px solid #8C8C8C;
+  border-radius: 5px;
+  padding: 10px;
+}
+.baton {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: #3F3F3F;
+  padding: 5px;
+  border: 2px solid #8C8C8C;
+  border-radius: 5px;
+  cursor: pointer;
+}
