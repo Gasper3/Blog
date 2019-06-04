@@ -1,5 +1,9 @@
 <?php
   session_start();
+  if(isset($_SESSION['logged'])) {
+    header("Location: admin/admin.php");
+    exit();
+  }
 ?>
 <html>
 <head>
@@ -16,11 +20,17 @@
 
 
       <form method="post" action="php_login.php">
-        <p class="info">Name</p>
-        <input type="text" name="name" class="field">
+        <p class="info">Username</p>
+        <input type="text" name="username" class="field" <?= (isset($_SESSION['error_user'])) ? 'value="'.$_SESSION['user'].'"' : ''?>>
         <p class="info">Password</p>
         <input type="password" name="pass" class="field">
         <p><input type="submit" name="button" value="Login" class="baton"></p>
+        <?php
+          if(isset($_SESSION['error_user'])) {
+           echo $_SESSION['error_user'];
+           unset($_SESSION['error_user']);
+          }
+        ?>
       </form>
 
   </div>

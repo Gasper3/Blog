@@ -3,6 +3,7 @@
    <title>Panel administracyjny</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="style/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -11,7 +12,7 @@
     </header>
 
     <section>
-      <h2 class='nav'>Search</h2>
+      <h2 class='nav'>Szukaj</h2>
       <form method="post">
         <input type="text" class="search" name="szukaj"><input type="submit" value='Search' alt="Submit" name="button" class='search'>
       </form>
@@ -19,14 +20,14 @@
 
     <nav>
       <ul>
-        <li class='nav'>NAVIGATION</li>
-        <li><a href='login.php'>Sign in</a></li>
+        <li class='nav'>MENU</li>
+        <li></li>
         <li><a href='newsletter.php'>Newsletter</a></li>
       </ul>
     </nav>
 
     <footer>
-      <h5>Made by Gasper3</h5>
+      <h5>Made by Gasper3<br /><a href='login.php'>Zaloguj</a></h5>
     </footer>
 
   </div>
