@@ -10,6 +10,7 @@ if(!isset($_SESSION['logged'])) {
    <title>Panel administracyjny</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 </head>
 <body>
   <div class="container">

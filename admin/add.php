@@ -11,6 +11,7 @@
   <title>Dodaj wpis</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -33,11 +34,11 @@
     </footer>
   </div>
   <div class="main">
-    <form method="post">
+    <form method="post" action='php_add.php'>
       <h2>Nagłówek</h2>
-      <p><input type="text" name='headline'></p>
+      <p><input type="text" name='headline' class='headline'></p>
       <h2>Zawartość wpisu</h2>
-      <p><textarea name="content"></textarea></p>
+      <p><textarea name="content" class="content"></textarea></p>
     </form>
 
     <span class="copyright">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
