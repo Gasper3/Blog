@@ -9,6 +9,8 @@ body {
 }
 .copyright {
   font-size: 12px;
+  position: absolute;
+  bottom: 0;
 }
 
 header {
@@ -21,10 +23,9 @@ header {
   flex: 50%;
   font-weight: bold;
   color: white;
-}
-span[class=admin] {
   font-size: 20px;
 }
+
 .container {
   margin-right: 0px;
   position: fixed;
@@ -51,6 +52,9 @@ a {
   color: #BFBFBF;
   font-weight: bold;
 }
+a:hover {
+  color: white;
+}
 .nav {
   color: #8C8C8C;
 }
@@ -69,4 +73,9 @@ a {
   min-height: 100%;
   height: auto;
   text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }
