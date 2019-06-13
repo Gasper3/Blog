@@ -103,6 +103,20 @@ a:hover {
   -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.75);
 }
+.adding {
+  font-size: 20px;
+  background-color: #BFBFBF;
+  color: #262626;
+  border: 2px solid #8C8C8C;
+}
+.adding:hover {
+  color: white;
+  background-color: #8C8C8C;
+  outline: none;
+  -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.75);
+}
 
 footer {
   position: absolute;
