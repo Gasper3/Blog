@@ -16,11 +16,11 @@ if(!isset($_SESSION['logged'])) {
   $que->execute();
 
   if($que) {
-    $_SESSION['added'] = "Dodano wpis";
+    $_SESSION['added'] = "<span style='color: darkgreen; font-size: 20px;'>Dodano wpis</span>";
     header("Location: add.php");
     exit();
   } else {
-    $_SESSION['add-error'] = "Nie udało się dodać wpisu";
+    $_SESSION['add-error'] = "<span style='color: red; font-size: 20px;'>Nie udało się dodać wpisu</span>";
     header("Location: add.php");
   }
 }
