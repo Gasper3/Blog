@@ -1,10 +1,10 @@
 <?php
 session_start();
 if(!isset($_SESSION['logged'])) {
-  header("Location: ../login.php");
+  header("Location: ../../login.php");
   exit();
 } else {
-  require_once '../database/database.php';
+  require_once '../../database/database.php';
   $headline = $_POST['headline'];
   $content = $_POST['content'];
   $author = $_POST['author'];
@@ -17,10 +17,10 @@ if(!isset($_SESSION['logged'])) {
 
   if($que) {
     $_SESSION['added'] = "<span style='color: darkgreen; font-size: 20px;'>Dodano wpis</span>";
-    header("Location: add.php");
+    header("Location: ../add.php");
     exit();
   } else {
     $_SESSION['add-error'] = "<span style='color: red; font-size: 20px;'>Nie udało się dodać wpisu</span>";
-    header("Location: add.php");
+    header("Location: ../add.php");
   }
 }

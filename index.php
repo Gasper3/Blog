@@ -3,6 +3,7 @@
    <title>Panel administracyjny</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="style/style.css">
+   <link rel="stylesheet" href="admin/style/all.css">
    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 </head>
 <body>
@@ -27,16 +28,14 @@
     </nav>
 
     <footer>
-      <h5>Made by Gasper3<br /><a href='login.php'>Zaloguj</a></h5>
+      <h5>Made by Gasper3<br><a href='login.php'>Zaloguj</a></h5>
     </footer>
 
   </div>
 
   <div class="main">
     <?php
-      if(isset($_POST['button'])) {
-
-      }
+      require_once 'scr/php-all.php';
 
     ?>
 

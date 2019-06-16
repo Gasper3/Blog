@@ -19,7 +19,7 @@
     </header>
 
 
-      <form method="post" action="php_login.php">
+      <form method="post" action="scr/php_login.php">
         <p class="info">Username</p>
         <input type="text" name="username" class="field" <?= (isset($_SESSION['error_user'])) ? 'value="'.$_SESSION['user'].'"' : ''?>>
         <p class="info">Password</p>

@@ -1,0 +1,81 @@
+body {
+  background-image: url("../../img/hexellence.png");
+  font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color: #111;
+}
+.icon {
+  width: 23px;
+}
+.copyright {
+  font-size: 10px;
+  position: relative;
+  bottom: 0;
+}
+
+header {
+  display: flex;
+  background-color: #262626;
+  padding: 10px;
+  text-align: center;
+}
+.admin {
+  flex: 50%;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.container {
+  margin-right: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 200px;
+  background-color: #3F3F3F;
+  overflow: auto;
+  overflow-y:hidden;
+}
+
+ul, li {
+  margin: 0px;
+  display: block;
+  list-style-type: none;
+  padding: 10px;
+}
+li {
+  border-bottom: 2px solid grey;
+}
+a {
+  text-decoration: none;
+  color: #BFBFBF;
+  font-weight: bold;
+}
+a:hover {
+  color: white;
+}
+.nav {
+  color: #8C8C8C;
+}
+.search {
+  background-color: #3F3F3F;
+  color: white;
+  border: 2px solid #8C8C8C;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.main {
+  margin-left: 190px;
+  min-height: 100%;
+  height: auto;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
