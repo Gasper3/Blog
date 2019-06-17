@@ -7,7 +7,7 @@ if(!isset($_SESSION['logged'])) {
 ?>
 <html>
 <head>
-   <title>Wszystkie wpisy</title>
+   <title>Usuwanie</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="style/style.css">
    <link rel="stylesheet" href="style/all.css">
@@ -22,10 +22,10 @@ if(!isset($_SESSION['logged'])) {
     </header>
     <ul>
       <li><span class="nav">NAWIGACJA</span></li>
-      <li><a href="all.php" style="color: white;">Wyświetl wszystkie</a></li>
+      <li><a href="all.php">Wyświetl wszystkie</a></li>
       <li><a href="add.php">Dodaj wpis</a></li>
-      <li><a href="edit.php">Edytuj wpis</a></li>
-      <li><a href="del.php">Usuń wpis</a></li>
+      <li><a href="edit.php" >Edytuj wpis</a></li>
+      <li><a href="del.php" style="color: white;">Usuń wpis</a></li>
       <li><span class="nav">SZUKAJ</span></li>
       <li><input type="text" class="search"></li>
     </ul>
@@ -36,9 +36,7 @@ if(!isset($_SESSION['logged'])) {
     </footer>
   </div>
   <div class="main">
-    <?php
-      require_once 'scr/php-all.php';
-    ?>
+
   </div>
 
 </body>

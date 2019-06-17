@@ -11,6 +11,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="style/login_style.css">
+  <link rel="shortcut icon" type="image/png" href="img/blog.png"/>
 </head>
 <body>
   <div class="container">
