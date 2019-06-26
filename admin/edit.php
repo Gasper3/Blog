@@ -10,7 +10,8 @@ if(!isset($_SESSION['logged'])) {
    <title>Edytowanie</title>
    <meta charset="utf-8">
    <link rel="stylesheet" href="style/style.css">
-   <link rel="stylesheet" href="style/all.css">
+   <link rel="stylesheet" href="style/edit.css">
+   <link rel="stylesheet" href="style/add.css">
    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
    <link rel="shortcut icon" type="image/png" href="../img/blog.png"/>
 </head>
@@ -36,7 +37,50 @@ if(!isset($_SESSION['logged'])) {
     </footer>
   </div>
   <div class="main">
-
+    <form method="post" action="edit.php">
+      <h2>Wybierz tytuł wpisu</h2>
+      <?php
+        require_once '../database/database.php';
+        $que = $db->query('SELECT name from wpisy;');
+        $headlines = $que->fetchAll();
+        echo "<select name='list' class='list'>";
+        foreach($headlines as $head) {
+          echo "<option value={$head['name']}>".$head['name']."</option>";
+        }
+        echo "</select>";
+      ?>
+      <p><input type="submit" value="Edytuj" name='buton'></p>
+    </form>
+    <form method="post" action="scr/update.php">
+      <?php
+        if(isset($_POST['buton'])) {
+          require_once '../database/database.php';
+          $headline = $_POST['list'];
+          $_SESSION['headline']=$headline;
+          $que = $db->prepare('SELECT name, content, author from wpisy where name like :headline;');
+          $que->bindValue(":headline", $headline, PDO::PARAM_STR);
+          $que->execute();
+          $blog = $que->fetch(PDO::FETCH_ASSOC);
+          echo "<h2>Nagłówek</h2>";
+          echo "<input class='headline' type='text' name='head' value='{$blog["name"]}'>";
+          echo "<h2>Zawartość wpisu</h2>";
+          echo "<textarea class='content' name='con'>{$blog['content']}</textarea>";
+          echo "<h2>Autor</h2>";
+          echo "<input type='text' name='au' class='headline' value='{$blog['author']}'>";
+          echo "<p><input type='submit' value='Edytuj wpis' class='adding' name='add'></p>";
+        }
+      ?>
+    </form>
+    <?php
+      if(isset($_SESSION['edit'])) {
+        echo $_SESSION['edit'];
+        unset($_SESSION['edit']);
+      }
+      if(isset($_SESSION['edit-error'])) {
+        echo $_SESSION['edit-error'];
+        unset($_SESSION['edit-error']);
+      }
+    ?>
   </div>
 
 </body>
