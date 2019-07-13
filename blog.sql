@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 05 Cze 2019, 10:04
+-- Czas generowania: 13 Lip 2019, 16:52
 -- Wersja serwera: 10.1.38-MariaDB
 -- Wersja PHP: 7.3.3
 
@@ -55,6 +55,24 @@ CREATE TABLE `wpisy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
 
 --
+-- Zrzut danych tabeli `wpisy`
+--
+
+INSERT INTO `wpisy` (`id`, `name`, `content`, `author`) VALUES
+(1, 'edytowany', 'edit2', 'edit2'),
+(2, 'Wyszła nowa gra pod tytułem Cuberpunk', 'Gra jest spoko i ją lubię', 'Kapi'),
+(3, 'test2', 'test2', 'test'),
+(4, 'test3', 'test3', 'test3'),
+(5, 'test3', 'test3', 'test3'),
+(6, 'test4', 'test4', 'test4'),
+(7, 'test5', 'test5', 'test5'),
+(8, 'test6', 'test6', 'test6'),
+(10, 'test7', 'test7', 'test7'),
+(11, 'test8', 'test8', 'test8'),
+(13, 'aktu', 'aktu', 'aktu'),
+(14, 'a', 'a', 'a');
+
+--
 -- Indeksy dla zrzutów tabel
 --
 
@@ -84,7 +102,7 @@ ALTER TABLE `uzytkownicy`
 -- AUTO_INCREMENT dla tabeli `wpisy`
 --
 ALTER TABLE `wpisy`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

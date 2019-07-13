@@ -39,23 +39,26 @@ if(!isset($_SESSION['logged'])) {
   <div class="main">
     <form method="post" action="edit.php">
       <h2>Wybierz tytuł wpisu</h2>
+      <!-- LISTA Z TYTULAMI WPISOW -->
       <?php
         require_once '../database/database.php';
         $que = $db->query('SELECT name from wpisy;');
         $headlines = $que->fetchAll();
         echo "<select name='list' class='list'>";
         foreach($headlines as $head) {
-          echo "<option value={$head['name']}>".$head['name']."</option>";
+          echo "<option value='".$head['name']."'>".$head['name']."</option>";
         }
         echo "</select>";
       ?>
       <p><input type="submit" value="Edytuj" name='buton'></p>
     </form>
     <form method="post" action="scr/update.php">
+    <!-- PANEL EDYCYJNY -->
       <?php
         if(isset($_POST['buton'])) {
           require_once '../database/database.php';
           $headline = $_POST['list'];
+          echo $headline;
           $_SESSION['headline']=$headline;
           $que = $db->prepare('SELECT name, content, author from wpisy where name like :headline;');
           $que->bindValue(":headline", $headline, PDO::PARAM_STR);
@@ -72,6 +75,7 @@ if(!isset($_SESSION['logged'])) {
       ?>
     </form>
     <?php
+    // WYSWIETLENIE KOMUNIKATU
       if(isset($_SESSION['edit'])) {
         echo $_SESSION['edit'];
         unset($_SESSION['edit']);
