@@ -4,7 +4,7 @@
   $posts = $que->fetchAll();
 
   foreach($posts as $post) {
-    echo "<h2>{$post['name']}</h2>";
-    echo "<p>{$post['content']}</p>";
+    echo "<h2 class='headline'>{$post['name']}</h2>";
+    echo "<span class='content'>{$post['content']}</span>";
     echo "<p class='autor'>Autorem wpisu jest: {$post['author']}</p>";
   }

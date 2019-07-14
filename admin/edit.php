@@ -30,50 +30,28 @@ if(!isset($_SESSION['logged'])) {
       <li><span class="nav">SZUKAJ</span></li>
       <li><input type="text" class="search"></li>
     </ul>
-
-    <footer>
-      <h5>Made by Gasper3</h5>
-        <span class="copyright">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
-    </footer>
+    <?php
+      require_once 'scr/footer.php';
+    ?>
   </div>
   <div class="main">
     <form method="post" action="edit.php">
       <h2>Wybierz tytuł wpisu</h2>
       <!-- LISTA Z TYTULAMI WPISOW -->
       <?php
-        require_once '../database/database.php';
-        $que = $db->query('SELECT name from wpisy;');
-        $headlines = $que->fetchAll();
-        echo "<select name='list' class='list'>";
-        foreach($headlines as $head) {
-          echo "<option value='".$head['name']."'>".$head['name']."</option>";
-        }
-        echo "</select>";
+      require_once 'scr/titles.php';
       ?>
-      <p><input type="submit" value="Edytuj" name='buton'></p>
     </form>
+
     <form method="post" action="scr/update.php">
     <!-- PANEL EDYCYJNY -->
       <?php
         if(isset($_POST['buton'])) {
-          require_once '../database/database.php';
-          $headline = $_POST['list'];
-          echo $headline;
-          $_SESSION['headline']=$headline;
-          $que = $db->prepare('SELECT name, content, author from wpisy where name like :headline;');
-          $que->bindValue(":headline", $headline, PDO::PARAM_STR);
-          $que->execute();
-          $blog = $que->fetch(PDO::FETCH_ASSOC);
-          echo "<h2>Nagłówek</h2>";
-          echo "<input class='headline' type='text' name='head' value='{$blog["name"]}'>";
-          echo "<h2>Zawartość wpisu</h2>";
-          echo "<textarea class='content' name='con'>{$blog['content']}</textarea>";
-          echo "<h2>Autor</h2>";
-          echo "<input type='text' name='au' class='headline' value='{$blog['author']}'>";
-          echo "<p><input type='submit' value='Edytuj wpis' class='adding' name='add'></p>";
+          require_once 'scr/post-panel.php';
         }
       ?>
     </form>
+
     <?php
     // WYSWIETLENIE KOMUNIKATU
       if(isset($_SESSION['edit'])) {

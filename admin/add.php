@@ -31,12 +31,12 @@
       <li><input type="text" class="search"></li>
     </ul>
 
-    <footer>
-      <h5>Made by Gasper3</h5>
-        <span class="copyright">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
-    </footer>
+    <?php
+      require_once 'scr/footer.php';
+    ?>
   </div>
   <div class="main">
+    
     <form method="post" action='scr/php_add.php'>
       <h2>Nagłówek</h2>
       <input type="text" name='headline' class='headline'>
@@ -45,6 +45,7 @@
       <h2>Autor</h2>
       <input type="text" name='author' class='headline'>
       <p><input type="submit" value="Dodaj wpis" class="adding" name="add"></p>
+
       <?php
         if(isset($_SESSION['added'])) {
           echo $_SESSION['added'];
