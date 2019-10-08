@@ -1,5 +1,5 @@
 # BLOG
-> My first and simple project in PHP
+> My first project in PHP
 
 ## Table of contents
 * [General info](#general-info)
@@ -10,7 +10,7 @@
 * [Contact](#contact)
 
 ## General info
-This is my first app. It's simple quiz app.
+Simple blog page. Very simple, but it works.
 
 ## Technologies
 * PHP
