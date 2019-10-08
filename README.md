@@ -1,14 +1,30 @@
-# Blog
-Its my first project in PHP. 
+# BLOG
+> My first and simple project in PHP
 
-### Login and password for admin panel
-* login - admin
-* password - qwerty
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Features](#features)
+* [TODO](#todo)
+* [Status](#status)
+* [Contact](#contact)
 
-## Future updates
-* #### Admin panel
-* deleting posts
-* searching for posts
-* #### Front page
-* searching for posts
-* better visual look of fetched posts
+## General info
+This is my first app. It's simple quiz app.
+
+## Technologies
+* PHP
+* CSS
+
+## Features
+* edit, add page for posts
+* users
+
+## TODO
+* working page for deleting posts
+
+## Status
+Project is: _in progress_
+
+## Contact
+Created by [@Gasper3](https://github.com/Gasper3) - feel free to contact me!
