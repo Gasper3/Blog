@@ -11,7 +11,8 @@
 
 ## General info
 Simple blog page. Very simple, but it works.  
-User: admin ; Password: qwerty
+User: admin  
+Password: qwerty
 
 ## Technologies
 * PHP
