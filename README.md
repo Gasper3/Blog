@@ -10,7 +10,8 @@
 * [Contact](#contact)
 
 ## General info
-Simple blog page. Very simple, but it works.
+Simple blog page. Very simple, but it works.  
+User: admin ; Password: qwerty
 
 ## Technologies
 * PHP
