@@ -1,9 +1,9 @@
 <?php
 return [
   "host" => "localhost",
-  "user" => "root",
-  "password" => "",
-  "database" => "blog"
+  "user" => "kacper",
+  "password" => "qwerty",
+  "database" => "blog2"
 ];
 
 
