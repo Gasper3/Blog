@@ -1,4 +1,5 @@
 <?php
+// show all articles
   require_once 'database/database.php';
   $que = $db->query('SELECT name, content, author from wpisy;');
   $posts = $que->fetchAll();

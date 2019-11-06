@@ -1,4 +1,5 @@
 <?php
+//edit panel for article
   require_once '../database/database.php';
   $headline = $_POST['list'];
   $_SESSION['headline']=$headline;

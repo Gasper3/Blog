@@ -1,4 +1,5 @@
 <?php
+// show select with titles
 require_once '../database/database.php';
 $que = $db->query('SELECT name from wpisy;');
 $headlines = $que->fetchAll();
