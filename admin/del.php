@@ -35,6 +35,31 @@ if(!isset($_SESSION['logged'])) {
     ?>
   </div>
   <div class="main">
+    <form method="post">
+      <?php require_once 'scr/delete-titles.php' ?>
+    </form>
+
+    <form method="post" action="scr/delete.php">
+    <!-- PANEL EDYCYJNY -->
+      <?php
+        if(isset($_POST['buton']))
+        {
+          require_once 'scr/show-post.php';
+        }
+      ?>
+    </form>
+
+    <?php
+    // WYSWIETLENIE KOMUNIKATU
+      if(isset($_SESSION['edit'])) {
+        echo $_SESSION['edit'];
+        unset($_SESSION['edit']);
+      }
+      if(isset($_SESSION['edit-error'])) {
+        echo $_SESSION['edit-error'];
+        unset($_SESSION['edit-error']);
+      }
+    ?>
 
   </div>
 
