@@ -26,7 +26,7 @@ Password: qwerty
 * working page for deleting posts
 
 ## Status
-Project is: _in progress_
+Project is: _in progress_ (For now i stopped working on this but i want to clean up code and use some OOP)
 
 ## Contact
 Created by [@Gasper3](https://github.com/Gasper3) - feel free to contact me!
