@@ -1,5 +1,6 @@
 # BLOG
-> My first project in PHP
+> My first project in PHP. It's old and the code is ugly but i will change it in future.
+> Take a look at my current [project](https://github.com/Gasper3/symfony-blog)
 
 ## Table of contents
 * [General info](#general-info)
